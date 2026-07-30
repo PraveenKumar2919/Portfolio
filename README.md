@@ -1,8 +1,3 @@
-# Portfolio
-
-https://praveenkumar2919.github.io/Portfolio/
-
-
 # 🚀 Praveenkumar V R - Portfolio Website
 
 Welcome to my personal portfolio website! This project showcases my skills, projects, education, and contact information as a Python and Full Stack Developer.
