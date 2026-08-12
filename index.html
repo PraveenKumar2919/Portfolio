@@ -2,391 +2,1430 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio | Praveenkumar V R</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <meta name="description"
+          content="Praveenkumar V R - Python Django Backend Developer and Full Stack Developer specializing in Django, REST APIs, React, MySQL and modern web applications.">
+
+    <meta name="keywords"
+          content="Python Developer, Django Developer, Backend Developer, Full Stack Developer, React Developer, REST API, Django REST Framework, Chennai">
+
+    <meta name="author" content="Praveenkumar V R">
+
+    <title>Praveenkumar V R | Python Django Backend Developer</title>
+
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+          rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
-<header>
-    <div class="container nav-container">
+<!-- ================= PRELOADER ================= -->
 
-        <h2 class="logo">
-            <span class="logo-p">Port</span><span class="logo-f">folio</span>
-        </h2>
-
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-         <button class="hamburger" id="hamburger">
-    <i class="fas fa-bars"></i>
-</button>
-   
-</button>
-
-        <div class="nav-right">
-    <button id="themeToggle">🌙</button>
+<div id="preloader">
+    <div class="loader"></div>
 </div>
 
+<!-- ================= HEADER ================= -->
 
-    </div>
+<header class="header" id="header">
+
+    <nav class="navbar container">
+
+        <a href="#home" class="logo">
+            <span>&lt;</span>Portfolio<span>/&gt;</span>
+        </a>
+
+        <div class="nav-menu" id="nav-menu">
+
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#internship" class="nav-link">Internship</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#contact" class="nav-link">Contact</a>
+
+            <a href="resume.pdf"
+               class="nav-resume"
+               target="_blank">
+                <i class="fa-solid fa-file-arrow-down"></i>
+                Resume
+            </a>
+
+        </div>
+
+        <div class="nav-actions">
+
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </nav>
+
 </header>
 
-<!-- ================= HOME ================= -->
-<section id="home" class="home">
 
-    <!-- Floating Bubbles -->
-    <div class="bubbles">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+<!-- ================= HERO ================= -->
 
-    <div class="home-container">
+<main>
 
-        <!-- LEFT SIDE -->
-        <div class="home-left">
-            <h4>Hi, I am</h4>
-            <h1>PRAVEENKUMAR V R</h1>
-            <p>Front-End Developer / Python Developer</p>
+<section class="hero section" id="home">
 
-            <div class="social-icons">
-                
-                <!-- GitHub -->
-                <a href="https://github.com/PraveenKumar2919" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i>
+    <div class="hero-bg-grid"></div>
+
+    <div class="container hero-container">
+
+        <div class="hero-content reveal">
+
+            <p class="hero-intro">
+                HELLO, I'M
+            </p>
+
+            <h1 class="hero-name">
+                Praveenkumar <span>V R</span>
+            </h1>
+            <h2>
+                <span class="typing-text"></span>
+                <span class="cursor">|</span>
+            </h2>
+
+            <p class="hero-description">
+                I build scalable backend systems, REST APIs and responsive
+                full-stack web applications using Python, Django, React and
+                modern database technologies.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fa-solid fa-code"></i>
+                    View Projects
                 </a>
 
-                <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/in/praveenkumar-v-r/" 
-                   target="_blank" 
-                   rel="noopener noreferrer">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-
-                <!-- Instagram -->
-                <a href="https://www.instagram.com/_mr.pilot" 
-                   target="_blank" 
-                   rel="noopener noreferrer">
-                    <i class="fab fa-instagram"></i>
-                </a>
-
-                <!-- Gmail -->
-                <a href="mailto:vrpraveenkumar2003@gmail.com">
-                    <i class="fas fa-envelope"></i>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fa-regular fa-paper-plane"></i>
+                    Contact Me
                 </a>
 
             </div>
+
+            <div class="hero-socials">
+
+                <a href="https://github.com/PraveenKumar2919"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/praveenkumar-v-r/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+              <a href="mailto:vrpraveenkumar2003@gmail.com"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                 aria-label="Email Praveenkumar">
+                 <i class="fa-solid fa-envelope"></i>
+              </a>
+                  <a href="https://www.instagram.com/_mr.pilot"
+               target="_blank"
+               rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            </div>
+
         </div>
 
-        <!-- RIGHT SIDE -->
-        <div class="home-right">
-            <img src="ChatGPT Image Apr 5, 2026, 02_00_42 PM.png" alt="Profile Image">
+
+        <div class="hero-visual reveal">
+
+            <div class="code-window">
+
+                <div class="window-header">
+
+                    <div class="window-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <span class="window-title">
+                        developer.py
+                    </span>
+
+                </div>
+
+                <div class="code-content">
+
+                    <p>
+                        <span class="code-keyword">class</span>
+                        <span class="code-class">Developer</span>:
+                    </p>
+
+                    <p class="indent">
+                        <span class="code-keyword">def</span>
+                        <span class="code-function">__init__</span>
+                        (self):
+                    </p>
+
+                    <p class="double-indent">
+                        self.name =
+                        <span class="code-string">
+                            "Praveenkumar V R"
+                        </span>
+                    </p>
+
+                    <p class="double-indent">
+                        self.role =
+                        <span class="code-string">
+                            "Python Developer"
+                        </span>
+                    </p>
+
+                    <p class="double-indent">
+                        self.framework =
+                        <span class="code-string">
+                            "Django"
+                        </span>
+                    </p>
+
+                    <p class="double-indent">
+                        self.focus =
+                        <span class="code-string">
+                            "Backend & Full Stack"
+                        </span>
+                    </p>
+
+                    <p class="double-indent">
+                        self.learning =
+                        <span class="code-string">
+                            "Always"
+                        </span>
+                    </p>
+
+                    <p class="blank-line"></p>
+
+                    <p class="indent">
+                        <span class="code-keyword">def</span>
+                        <span class="code-function">build</span>
+                        (self):
+                    </p>
+
+                    <p class="double-indent">
+                        <span class="code-keyword">return</span>
+                        <span class="code-string">
+                            "Scalable Solutions 🚀"
+                        </span>
+                    </p>
+
+                </div>
+
+            </div>
+
         </div>
 
     </div>
+
+    <a href="#about" class="scroll-down">
+        <span>Scroll Down</span>
+        <i class="fa-solid fa-arrow-down"></i>
+    </a>
+
 </section>
+
 
 <!-- ================= ABOUT ================= -->
-<section id="about" class="about-section">
 
-    <div class="about-container">
+<section class="about section" id="about">
 
-        <!-- LEFT -->
-        <div class="about-left">
-            <h2 class="section-title">About Me</h2>
+    <div class="container">
 
-            <p>
-                Hi, I'm Praveenkumar, a Front-End and Python Developer. I specialize in building responsive,
-                interactive web applications using HTML, CSS, JavaScript, Django and MYSQL with backend support in Python. I’m passionate about creating efficient, 
-                user-friendly solutions and continuously learning new technologies to improve my craft.
+        <div class="section-heading reveal">
+
+            <p class="section-tag">
+                01. About Me
             </p>
 
-            <p>
-                I focus on performance and responsive design to create fast, visually appealing, and user-friendly websites. My goal is to deliver web applications that are efficient, engaging, and enjoyable to use.
-            </p>
+            <h2>
+                Building reliable solutions with
+                <span>Clean Code.</span>
+            </h2>
 
-            <div class="resume-box">
-                <a href="Praveenkumar  resume.pdf" download class="resume-btn">
-                    Resume
-                </a>
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-content reveal">
+
+                <p>
+                    I'm a Computer Science Engineering graduate and a
+                    <strong>Python / Django Backend Developer</strong>
+                    with a strong interest in building reliable,
+                    maintainable and scalable web applications.
+                </p>
+
+                <p>
+                    My experience includes developing backend systems with
+                    <strong>Python, Django and Django REST Framework</strong>,
+                    designing RESTful APIs, integrating relational databases,
+                    implementing authentication and connecting backend
+                    services with modern React frontends.
+                </p>
+
+                <p>
+                    I enjoy solving technical problems, learning new
+                    technologies and turning ideas into production-ready
+                    applications with clean architecture and user-friendly
+                    interfaces.
+                </p>
+
+                <div class="about-highlights">
+
+                    <div class="highlight-card">
+                        <i class="fa-solid fa-server"></i>
+                        <div>
+                            <strong>Backend</strong>
+                            <span>Python & Django</span>
+                        </div>
+                    </div>
+
+                    <div class="highlight-card">
+                        <i class="fa-solid fa-code"></i>
+                        <div>
+                            <strong>APIs</strong>
+                            <span>REST & DRF</span>
+                        </div>
+                    </div>
+
+                    <div class="highlight-card">
+                        <i class="fa-solid fa-database"></i>
+                        <div>
+                            <strong>Database</strong>
+                            <span>MySQL & PostgreSQL</span>
+                        </div>
+                    </div>
+
+                    <div class="highlight-card">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <div>
+                            <strong>Frontend</strong>
+                            <span>React & JavaScript</span>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
-        </div>
 
-        <!-- RIGHT -->
-        <div class="about-right">
 
-            <div class="education-book-container">
+            <div class="about-card reveal">
 
-    <div class="book" id="eduBook">
-        <!-- Book Cover -->
-        <div class="book-cover">
-            <h3>Education</h3>
-        </div>
-
-        <!-- Book Inside -->
-        <div class="book-content">
-            <h4>B.E/Computer Science and Engineering</h4>
-            <p>K.S.Rangasamy College of Technology, Tiruchengode</p>
-            <p> CGPA - 8.1</p>
-            <span>2021 – 2025</span>
-            
-
-            <hr>
-
-            <h4>Vetri Vikaas Boys Higher Secondary School - HSC</h4>
-            <p>Percentage - 89</p>
-            <span>2020 – 2021</span>
-
-            <hr>
-
-            <h4>Government High School  - SSLC</h4>
-            <p>Percentage - 86</p>
-            <span>2018 – 2019</span>
-        </div>
-    </div>
-
+                <div class="about-card-top">
+                  <div class="profile-avatar">
+    <img src="assets/profile.jpg"
+         alt="Praveenkumar V R"
+         class="profile-photo">
 </div>
 
+                    <div>
+                        <h3>Praveenkumar V R</h3>
+                        <p>Python / Django Developer</p>
+                    </div>
+                </div>
+
+                <div class="about-info">
+
+                    <div>
+                        <span>Location</span>
+                        <strong>Chennai, India</strong>
+                    </div>
+
+                    <div>
+                        <span>Education</span>
+                        <strong>B.E / Computer Science and Engineering</strong>
+                    </div>
+
+                    <div>
+                        <span>Specialization</span>
+                        <strong>Backend Development</strong>
+                    </div>
+
+                    <div>
+                        <span>Open To</span>
+                        <strong>Developer Opportunities</strong>
+                    </div>
+
+                </div>
+
+                <div class="availability">
+                    <span class="availability-dot"></span>
+                    Available for opportunities
+                </div>
+
+            </div>
 
         </div>
 
     </div>
+
 </section>
 
+
 <!-- ================= SKILLS ================= -->
-<section id="skills" class="section skills-section">
+
+<section class="skills section" id="skills">
+
     <div class="container">
-        <h2>Skills</h2>
+
+        <div class="section-heading reveal">
+
+            <p class="section-tag">
+                02. Technical Skills
+            </p>
+
+            <h2>
+                Technologies I
+                <span>Work With.</span>
+            </h2>
+
+        </div>
+
 
         <div class="skills-grid">
 
-            <div class="skill-box html">
-                <i class="fab fa-html5"></i>
-                <span>HTML</span>
+            <div class="skill-category reveal">
+
+                <div class="skill-category-header">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+
+                    <div>
+                        <h3>Backend</h3>
+                        <p>Server-side development</p>
+                    </div>
+                </div>
+
+                <div class="skill-tags">
+                    <span>Python</span>
+                    <span>Django</span>
+                    <span>Django REST Framework</span>
+                    <span>REST API</span>
+                    <span>OOP</span>
+                    <span>Authentication</span>
+                </div>
+
             </div>
 
-            <div class="skill-box css">
-                <i class="fab fa-css3-alt"></i>
-                <span>CSS</span>
+
+            <div class="skill-category reveal">
+
+                <div class="skill-category-header">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+
+                    <div>
+                        <h3>Frontend</h3>
+                        <p>Modern web interfaces</p>
+                    </div>
+                </div>
+
+                <div class="skill-tags">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>React.js</span>
+                    <span>Vite</span>
+                    <span>Axios</span>
+                </div>
+
             </div>
 
-            <div class="skill-box js">
-                <i class="fab fa-js"></i>
-                <span>JavaScript</span>
+
+            <div class="skill-category reveal">
+
+                <div class="skill-category-header">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+
+                    <div>
+                        <h3>Database</h3>
+                        <p>Data management</p>
+                    </div>
+                </div>
+
+                <div class="skill-tags">
+                    <span>MySQL</span>
+                    <span>PostgreSQL</span>
+                    <span>SQLite</span>
+                    <span>SQL</span>
+                    <span>CRUD</span>
+                    <span>Database Design</span>
+                </div>
+
             </div>
 
-            <div class="skill-box python">
-                <i class="fab fa-python"></i>
-                <span>PYTHON</span>
-            </div>
 
-            <div class="skill-box django">
-                <i class="fas fa-code"></i>
-                <span>DJANGO</span>
-            </div>
+            <div class="skill-category reveal">
 
+                <div class="skill-category-header">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
 
-            <div class="skill-box mysql">
-                <i class="fas fa-database"></i>
-                <span>MYSQL</span>
+                    <div>
+                        <h3>Tools & Workflow</h3>
+                        <p>Development ecosystem</p>
+                    </div>
+                </div>
+
+                <div class="skill-tags">
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>VS Code</span>
+                    <span>PyCharm</span>
+                    <span>Postman</span>
+                    <span>Vercel</span>
+                    <span>Render</span>
+                </div>
+
             </div>
 
         </div>
+
+
+        <div class="tech-strip reveal">
+
+            <span>Python</span>
+            <i class="fa-solid fa-circle"></i>
+            <span>Django</span>
+            <i class="fa-solid fa-circle"></i>
+            <span>DRF</span>
+            <i class="fa-solid fa-circle"></i>
+            <span>React</span>
+            <i class="fa-solid fa-circle"></i>
+            <span>MySQL</span>
+            <i class="fa-solid fa-circle"></i>
+            <span>Git</span>
+
+        </div>
+
     </div>
+
+</section>
+
+
+<!-- ================= EXPERIENCE ================= -->
+
+<section class="internships section" id="internships">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <p class="section-tag">
+                03.Internship
+            </p>
+
+            <h2>
+                My Professional
+                <span>Journey.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="timeline">
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-card">
+
+                    <div class="timeline-header">
+
+                        <div>
+                            <span class="timeline-type">
+                                Internship
+                            </span>
+
+                            <h3>Web Development Intern</h3>
+
+                            <h4>Synovers - Coimbatore</h4>
+                        </div>
+
+                        <span class="timeline-date">
+                            Web Development
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Worked on web development tasks and gained practical
+                        experience in frontend technologies, responsive
+                        interfaces and application development workflows.
+                    </p>
+
+                    <div class="timeline-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Web Development</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-card">
+
+                    <div class="timeline-header">
+
+                        <div>
+                            <span class="timeline-type">
+                                Project Experience
+                            </span>
+
+                            <h3>Python / Django Developer</h3>
+
+                            <h4>Backend & Full Stack Projects</h4>
+                        </div>
+
+                        <span class="timeline-date">
+                            Recent
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Developed backend applications using Django and
+                        Django REST Framework, implemented REST APIs,
+                        database integrations, authentication, filtering,
+                        pagination and React frontend integrations.
+                    </p>
+
+                    <div class="timeline-tags">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>DRF</span>
+                        <span>REST API</span>
+                        <span>React</span>
+                        <span>MySQL</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
 
 <!-- ================= PROJECTS ================= -->
 
-<section id="projects" class="section projects-section">
+<!-- =========================
+     PROJECTS SECTION
+========================= -->
+
+<section class="projects section" id="projects">
+
     <div class="container">
-        <h2>Projects</h2>
+
+        <div class="section-heading reveal">
+
+            <p class="section-tag">
+                04. Featured Projects
+            </p>
+
+            <h2>
+                Things I've
+                <span>Built.</span>
+            </h2>
+
+            <p class="section-description">
+                A selection of projects demonstrating backend development,
+                REST APIs, databases, automation and full-stack application development.
+            </p>
+
+        </div>
+
+
+        <!-- Project Filters -->
+
+        <div class="project-filters reveal">
+
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="django">
+                Django
+            </button>
+
+            <button class="filter-btn" data-filter="python">
+                Python
+            </button>
+
+            <button class="filter-btn" data-filter="fullstack">
+                Full Stack
+            </button>
+
+        </div>
+
+
+        <!-- Projects Grid -->
 
         <div class="projects-grid">
 
-            <!-- Project 1 -->
-            <div class="project-card">
-                <img src="assets/project1.jpg" alt="Portfolio Website">
 
-                <div class="project-overlay">
-                    <h3>Portfolio Website</h3>
-                    <p>Responsive personal portfolio with dark mode and animations.</p>
+            <!-- =========================
+                 PROJECT 1
+            ========================== -->
 
-                    <div class="tech-stack">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
+            <article class="project-card reveal"
+                     data-category="django fullstack">
+
+                <div class="project-top">
+
+                    <div class="project-icon">
+                        <i class="fa-solid fa-globe"></i>
                     </div>
 
                     <div class="project-links">
-                        <a href="#" target="_blank">Live</a>
-                        <a href="#" target="_blank">GitHub</a>
+
+                        <a href="https://github.com/PraveenKumar2919/Riyadvi-fullstack-Website"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
                     </div>
+
                 </div>
+
+                <h3>Full Stack Company Website</h3>
+
+                <p>
+                    Responsive company website with a modern React frontend
+                    and Django REST backend. Designed modular sections and
+                    API-driven modules for content management.
+                </p>
+
+                <ul class="project-features">
+                    <li>Responsive React interface</li>
+                    <li>Django REST APIs</li>
+                    <li>Axios API integration</li>
+                </ul>
+
+                <div class="project-tech">
+                    <span>React</span>
+                    <span>Vite</span>
+                    <span>Django</span>
+                    <span>DRF</span>
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 PROJECT 2
+            ========================== -->
+
+            <article class="project-card reveal"
+                     data-category="django fullstack">
+
+                <div class="project-top">
+
+                    <div class="project-icon">
+                        <i class="fa-solid fa-user-lock"></i>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/PraveenKumar2919/react-django-login-register"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <h3>React + Django Authentication</h3>
+
+                <p>
+                    Full-stack authentication application connecting a
+                    React frontend with a Django backend. Built reusable
+                    frontend components and integrated REST APIs for
+                    registration and login workflows.
+                </p>
+
+                <ul class="project-features">
+                    <li>React frontend</li>
+                    <li>Django REST backend</li>
+                    <li>API-based authentication flow</li>
+                </ul>
+
+                <div class="project-tech">
+                    <span>React</span>
+                    <span>Django</span>
+                    <span>DRF</span>
+                    <span>Axios</span>
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 PROJECT 3
+            ========================== -->
+
+            <article class="project-card reveal"
+                     data-category="python">
+
+                <div class="project-top">
+
+                    <div class="project-icon">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/PraveenKumar2919/Inventory-Reorder-Alert-System"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <h3>Inventory Reorder Alert System</h3>
+
+                <p>
+                    Python-based inventory automation tool that reads stock
+                    data from CSV files, identifies low-stock products and
+                    generates a structured reorder report for efficient
+                    inventory monitoring.
+                </p>
+
+                <ul class="project-features">
+                    <li>CSV data processing</li>
+                    <li>Automated reorder detection</li>
+                    <li>Generated restock reports</li>
+                </ul>
+
+                <div class="project-tech">
+                    <span>Python</span>
+                    <span>CSV</span>
+                    <span>Automation</span>
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 PROJECT 4
+            ========================== -->
+
+            <article class="project-card reveal"
+                     data-category="python">
+
+                <div class="project-top">
+
+                    <div class="project-icon">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/PraveenKumar2919"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <h3>Adaptive MobileNet Signature Recognition</h3>
+
+                <p>
+                    Machine learning project focused on handwritten signature
+                    recognition using an adaptive MobileNet-based framework.
+                    The project explored image classification techniques
+                    for handwritten signature datasets.
+                </p>
+
+                <ul class="project-features">
+                    <li>MobileNet architecture</li>
+                    <li>Image classification</li>
+                    <li>Handwritten signature recognition</li>
+                </ul>
+
+                <div class="project-tech">
+                    <span>Python</span>
+                    <span>MobileNet</span>
+                    <span>Deep Learning</span>
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 PROJECT 5
+            ========================== -->
+
+            <article class="project-card reveal"
+                     data-category="django fullstack">
+
+                <div class="project-top">
+
+                    <div class="project-icon">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/PraveenKumar2919"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <h3>Inventory Management Backend System</h3>
+
+                <p>
+                    A Django-based inventory management backend designed
+                    to manage products, stock and user access. Implemented
+                    REST APIs, MySQL integration, role-based authentication,
+                    pagination, filtering and search functionality.
+                </p>
+
+                <ul class="project-features">
+                    <li>500+ inventory records</li>
+                    <li>Role-based authentication</li>
+                    <li>RESTful API architecture</li>
+                </ul>
+
+                <div class="project-tech">
+                    <span>Python</span>
+                    <span>Django</span>
+                    <span>DRF</span>
+                    <span>MySQL</span>
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 PROJECT 6
+                 SECURITY AUDIT DASHBOARD
+            ========================== -->
+
+            <article class="project-card reveal"
+                     data-category="fullstack">
+
+                <div class="project-top">
+
+                    <div class="project-icon">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="https://github.com/PraveenKumar2919/security-audit-dashboard"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="GitHub Repository">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <h3>Security Audit Dashboard</h3>
+
+                <p>
+                    Full-stack security audit log dashboard designed to
+                    upload, view and investigate large volumes of system
+                    audit logs through a responsive web interface and
+                    RESTful backend APIs.
+                </p>
+
+                <ul class="project-features">
+                    <li>Bulk upload of 10,000+ audit logs</li>
+                    <li>Server-side search, filtering & sorting</li>
+                    <li>Pagination and MongoDB integration</li>
+                </ul>
+
+                <div class="project-tech">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>Express</span>
+                    <span>MongoDB</span>
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+        <!-- GitHub CTA -->
+
+        <div class="projects-cta reveal">
+
+            <p>
+                Want to see more of my work?
+            </p>
+
+            <a href="https://github.com/PraveenKumar2919"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-outline">
+
+                <i class="fa-brands fa-github"></i>
+                View GitHub
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section class="education section" id="education">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <p class="section-tag">
+                05. Education
+            </p>
+
+            <h2>
+                My Academic
+                <span>Background.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="education-card reveal">
+
+            <div class="education-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
             </div>
 
-            <!-- Project 2 -->
-            <div class="project-card">
-                <img src="assets/project2.jpg" alt="Employee Management System">
+            <div class="education-content">
 
-                <div class="project-overlay">
-                    <h3>Employee Management System</h3>
-                    <p>Java-based system integrated with MySQL for employee records.</p>
+                <span class="education-year">
+                    2021 – 2025
+                </span>
 
-                    <div class="tech-stack">
-                        <span>Python</span>
-                        <span>MySQL</span>
-                    </div>
+                <h3>
+                    Bachelor of Engineering —
+                    Computer Science and Engineering
+                </h3>
 
-                    <div class="project-links">
-                        <a href="#" target="_blank">GitHub</a>
-                    </div>
+                <h4>
+                    K.S. Rangasamy College of Technology
+                </h4>
+                <h4>
+                    CGPA - 8.1
+                <h4>
+
+                <p>
+                    Built a strong foundation in programming, data structures,
+                    databases, web development, software engineering and
+                    computer science fundamentals.
+                </p>
+
+                <div class="education-tags">
+                    <span>Computer Science</span>
+                    <span>Python</span>
+                    <span>Database</span>
+                    <span>Web Development</span>
                 </div>
-            </div>
 
-            <!-- Project 3 -->
-            <div class="project-card">
-                <img src="assets/project3.jpg" alt="E-Commerce Website">
-
-                <div class="project-overlay">
-                    <h3>E-Commerce Website</h3>
-                    <p>Responsive shopping site with product listing and UI effects.</p>
-
-                    <div class="tech-stack">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JS</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a href="#" target="_blank">Live</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 4 -->
-            <div class="project-card">
-                <img src="assets/project4.jpg" alt="Portfolio Website">
-
-                <div class="project-overlay">
-                    <h3>Portfolio Website</h3>
-                    <p>Responsive personal portfolio with dark mode and animations.</p>
-
-                    <div class="tech-stack">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a href="#" target="_blank">Live</a>
-                        <a href="#" target="_blank">GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 5 -->
-            <div class="project-card">
-                <img src="assets/project5.jpg" alt="Portfolio Website">
-
-                <div class="project-overlay">
-                    <h3>Portfolio Website</h3>
-                    <p>Responsive personal portfolio with dark mode and animations.</p>
-
-                    <div class="tech-stack">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a href="#" target="_blank">Live</a>
-                        <a href="#" target="_blank">GitHub</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 6 -->
-            <div class="project-card">
-                <img src="assets/project6.jpg" alt="Portfolio Website">
-
-                <div class="project-overlay">
-                    <h3>Portfolio Website</h3>
-                    <p>Responsive personal portfolio with dark mode and animations.</p>
-
-                    <div class="tech-stack">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a href="#" target="_blank">Live</a>
-                        <a href="#" target="_blank">GitHub</a>
-                    </div>
-                </div>
             </div>
 
         </div>
+
     </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta section">
+
+    <div class="container">
+
+        <div class="cta-box reveal">
+
+            <div>
+
+                <p class="section-tag">
+                    Let's connect
+                </p>
+
+                <h2>
+                    Have a project or opportunity
+                    <span>in mind?</span>
+                </h2>
+
+                <p>
+                    I'm open to Python, Django, Backend and Full Stack
+                    development opportunities.
+                </p>
+
+            </div>
+
+            <a href="#contact" class="btn btn-primary">
+                Get In Touch
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
 </section>
 
 
 <!-- ================= CONTACT ================= -->
-<section id="contact" class="contact-section">
-    <div class="contact-card">
 
-        <!-- LEFT CONTENT -->
-        <div class="contact-left">
-            <h2>Get in Touch</h2>
-            <p>
-                If you have any questions or want to work together,  
-                feel free to reach out. I’ll get back to you as soon as possible.
+<section class="contact section" id="contact">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <p class="section-tag">
+                06. Contact
             </p>
-            <p>
-                📍 Chennai, India <br>
-                📧 vrpraveenkumar2003@gmail.com <br>
-                📞 +91 8838578674
+
+            <h2>
+                Let's build something
+                <span>Together.</span>
+            </h2>
+
+            <p class="section-description">
+                Have an opportunity, project or just want to connect?
+                Feel free to reach out.
             </p>
+
         </div>
 
-        <!-- RIGHT FORM -->
-        <div class="contact-right">
-            <form id="contactForm">
 
-                <div class="input-row">
-                    <input type="text" placeholder="First Name" required>
-                    <input type="text" placeholder="Last Name" required>
+        <div class="contact-grid">
+
+
+            <div class="contact-info reveal">
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div>
+                        <span>Email</span>
+                        <a href="mailto:vrpraveenkumar2003@gmail.com">
+                            vrpraveenkumar2003@gmail.com
+                        </a>
+                    </div>
+
                 </div>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Message" rows="4" required></textarea>
 
-                <button type="submit">Send</button>
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+
+                    <div>
+                        <span>LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/praveenkumar-v-r/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            LinkedIn Profile
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+
+                    <div>
+                        <span>GitHub</span>
+                        <a href="https://github.com/PraveenKumar2919"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            GitHub Profile
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div>
+                        <span>Location</span>
+                        <strong>Chennai, India</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <form class="contact-form reveal"
+                  id="contact-form">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Name
+                        </label>
+
+                        <input type="text"
+                               id="name"
+                               name="name"
+                               placeholder="Your name"
+                               required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               placeholder="your@email.com"
+                               required>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="subject">
+                        Subject
+                    </label>
+
+                    <input type="text"
+                           id="subject"
+                           name="subject"
+                           placeholder="How can I help?"
+                           required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea id="message"
+                              name="message"
+                              rows="6"
+                              placeholder="Write your message..."
+                              required></textarea>
+
+                </div>
+
+
+                <button type="submit"
+                        class="btn btn-primary submit-btn">
+
+                    <span>
+                        Send Message
+                    </span>
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                </button>
+
+                <p class="form-status" id="form-status"></p>
+
             </form>
+
         </div>
 
     </div>
+
 </section>
 
+</main>
 
 
-<footer>
-    <p>© 2026 Praveenkumar | All Rights Reserved</p>
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container footer-container">
+
+        <div class="footer-brand">
+
+            <a href="#home" class="logo">
+                <span>&lt;</span>Portfolio<span>/&gt;</span>
+            </a>
+
+            <p>
+                Python / Django Backend Developer
+                building reliable digital solutions.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#internship">internship</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div class="footer-socials">
+
+            <a href="https://github.com/PraveenKumar2919"
+               target="_blank"
+               rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/praveenkumar-v-r/"
+               target="_blank"
+               rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://www.instagram.com/_mr.pilot"
+               target="_blank"
+               rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © <span id="current-year"></span>
+            Praveenkumar V R. All rights reserved.
+        </p>
+
+        <p>
+            Built with HTML, CSS & JavaScript.
+        </p>
+
+    </div>
+
 </footer>
 
+
+<!-- Back To Top -->
+
+<button class="back-to-top"
+        id="back-to-top"
+        aria-label="Back to top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+<!-- JavaScript -->
+
 <script src="script.js"></script>
+
 </body>
 </html>
